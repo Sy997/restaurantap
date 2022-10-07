@@ -5,8 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import {Link, Navigate} from 'react-router-dom'
 import Button from '@mui/material/Button';
-import { userAdmin } from '../constants/data';
-
+import data from '../constants/data'
 
 const Adminlogin = () => {
 
@@ -14,15 +13,15 @@ const Adminlogin = () => {
     const [pass, setPassw] = useState('')
 
     const handleClick = (e) => {
-        userAdmin.user.map((user, index) => {
-            if (username !== user.user && pass !== user.matkhau && user.stt) {
-                const aler = document.getElementById('alert')
-                setTimeout(
-                    (() => aler.innerHTML = 'Thông tin tài khoản hoặc mật khẩu không đúng'),0)
-            } else {
-                <Navigate to='./dashboard' />
-            }
-        })
+            data.userAdmin.map((user) => {
+                if(username !== user.user && user.matkhau) {
+                    let aler = document.getElementById('alert')
+                    aler.innerHTML = "Thông tin tài khoản hoặc mật khẩu không đúng"
+                }
+                else {
+                    <Navigate to="/" />
+                }
+            })
     }
 
   return (

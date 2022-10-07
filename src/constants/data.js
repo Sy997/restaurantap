@@ -159,25 +159,24 @@ const loaitiecs = [
 
 const userAdmin = [
   {
-    stt: 1, 
     user: 'phamhoangsy777@gmail.com',
     matkhau: 123456
   },
   {
-    stt: 2, 
+
     user: 'phamhoangsy@gmail.com',
     matkhau: 234567
   },
   {
-    stt: 3, 
+
     user: 'phamhoangsy7@gmail.com',
     matkhau: 345678
   },
   {
-    stt: 4, 
+
     user: 'phamhoangsy77@gmail.com',
     matkhau: 456789
   },
 ]
 
-export  { wines, beer, awards, chinhanhs, loaitiecs, userAdmin };
+export default { wines, beer, awards, chinhanhs, loaitiecs, userAdmin };
