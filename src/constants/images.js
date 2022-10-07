@@ -23,7 +23,7 @@ import gericht from '../assets/gericht.png';
 import hs from '../assets/hongsy.jpg';
 import signme from '../assets/signme.PNG'
 
-export {  
+export default {  
   bg,
   chef,
   G,
