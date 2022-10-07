@@ -1,0 +1,29 @@
+.list {
+    max-width: 400px;
+    height: 100%;
+    margin-left: 0rem;
+    background: black;
+    border-radius: 7px;
+}
+
+.manage > li {
+    width: 400px;
+    padding: 10px 20px;
+    border: 1px solid;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+.folder {
+    margin-top: 0.7rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.folder > h4 {
+    color: white;
+    margin-left: 0.4rem
+}

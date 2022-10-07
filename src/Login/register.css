@@ -1,0 +1,40 @@
+.app__bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+} 
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.formregister {
+    width: 600px;
+    height: 650px;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.inpname, .inppass, .inppass2, .button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction : column
+}
+
+ .inppass, .button {
+    margin-top: 1.5rem;
+}
