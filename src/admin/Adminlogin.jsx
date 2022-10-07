@@ -5,7 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import {Link, Navigate} from 'react-router-dom'
 import Button from '@mui/material/Button';
-import data from '../constants/data'
+import { userAdmin } from '../constants/data';
 
 
 const Adminlogin = () => {
@@ -14,7 +14,7 @@ const Adminlogin = () => {
     const [pass, setPassw] = useState('')
 
     const handleClick = (e) => {
-        data.userAdmin.map((user, index) => {
+        userAdmin.user.map((user, index) => {
             if (username !== user.user && pass !== user.matkhau && user.stt) {
                 const aler = document.getElementById('alert')
                 setTimeout(
