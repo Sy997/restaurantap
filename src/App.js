@@ -5,7 +5,10 @@ import Login from './Login/Login';
 import './App.css';
 import Register from './Login/register';
 import Booking from './components/booking/booking';
-
+import Adminlogin from './admin/Adminlogin';
+import Dashboard from './admin/dashboard';
+import Bookinginfo from './admin/booking/Bookinginfo';
+import DataTable from './admin/Account/Account';
 
 const App = () => {
   return (
@@ -16,6 +19,12 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/booking" element={<Booking />} />
 
+        <Route path="/adminlogin" element={<Adminlogin />} />
+        <Route path='/dashboardadmin' element={<Dashboard />} />
+
+        <Route path='/dashboardadmin/account' element={<DataTable />} />
+        <Route path='/dashboardadmin/datban' element={<Bookinginfo />} />
+      
       </Routes>
     </div>
 )};

@@ -180,4 +180,4 @@ const userAdmin = [
   },
 ]
 
-export default { wines, beer, awards, chinhanhs, loaitiecs, userAdmin };
+export  { wines, beer, awards, chinhanhs, loaitiecs, userAdmin };

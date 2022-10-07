@@ -1,0 +1,8 @@
+.useradm {
+    display: flex;
+    justify-content: space-around;
+}
+.maincore {
+    display: flex;
+    flex-direction: row;
+}

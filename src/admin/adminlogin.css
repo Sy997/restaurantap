@@ -1,0 +1,54 @@
+.adminlogin {
+    display: flex;
+    min-height: 100vh;
+}
+
+.formDn__admin {
+    border-radius: 10px;
+    width: 600px;
+    height: 550px;
+    background: orange;
+    display: flex;
+    flex-direction: column
+}
+
+h1 {
+    color: white;
+}
+
+.inpEm {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.email {
+    background: white;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.pass {
+    background: white;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.inpPa {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.forget {
+    margin-top: 1.2rem;
+    align-items: space-around;
+}
+
+.buttonCl {
+    margin-top: 1.3rem;
+}
