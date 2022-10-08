@@ -179,4 +179,191 @@ const userAdmin = [
   },
 ]
 
-export default { wines, beer, awards, chinhanhs, loaitiecs, userAdmin };
+
+const tieccuois = [
+  {
+    classify: 'Vip',
+    percent: '20%',
+    cost: '350.000.000Vnđ',
+    sales: '250.000.000Vnđ',
+    descr: 'Phòng được thiết kế như một ngôi Thánh Đường thực sự'
+  },
+  {
+    classify: 'Vip 2',
+    cost: '320.000.000Vnđ',
+    percent: '30%',
+    sales: '230.000.000Vnđ',
+    descr: 'Phòng được cách tân Châu Âu và Châu Á, được phục vụ bằng chất lượng hàng đầu'
+  },
+  {
+    classify: 'Trung binh',
+    cost: '300.000.000Vnđ',
+    percent: '40%',
+    sales: '200.000.000Vnđ',
+    descr: 'Phòng được thiết kế với nhưng vật liệu sang trọng và đầy đủ sự rực rỡ'
+  },
+  {
+    classify: 'Thường',
+    cost: '200.000.000Vnđ',
+    percent: '50%',
+    sales: '150.000.000Vnđ',
+    descr: 'Phòng được thiết kế sang trọng với đầy đủ tiện nghi'
+  },
+]
+
+const tiecsinhnhats = [
+  {
+    classify: 'Vip',
+    cost: '200.000.000Vnđ',
+    percent: '20%',
+    sales: '150.000.000Vnđ',
+    descr: 'Sự ấm cúng được diễn tả hết trong buổi sinh nhật',
+  },
+  {
+    classify: 'Vip 2',
+    cost: '199.000.000Vnđ',
+    percent: '30%',
+    sales: '99.000.000Vnđ',
+    descr: 'Nó được trang trí để cho bạn có cảm giác mọi người luôn nhớ đến ngày sinh của bạn'
+  },
+  {
+    classify: 'Trung binh',
+    cost: '150.000.000Vnđ',
+    percent: '40%',
+    sales: '69.000.000Vnđ',
+    descr: 'Phòng được thiết kế như phong cảnh trong truyện bước ra'
+  },
+  {
+    classify: 'Thường',
+    cost: '100.000.000Vnđ',
+    percent: '50%',
+    sales: '50.000.000Vnđ',
+    descr: 'Phòng được thiết kế dành riêng cho bạn và những người luôn bên bạn'
+  },
+]
+
+const tiecgiatiens = [
+  {
+    classify: 'Vip',
+    cost: '200.000.000Vnđ',
+    percent: '20%',
+    sales: '150.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Vip 2',
+    cost: '199.000.000Vnđ',
+    percent: '30%',
+    sales: '99.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Trung binh',
+    cost: '150.000.000Vnđ',
+    percent: '40%',
+    sales: '69.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Thường',
+    cost: '100.000.000Vnđ',
+    percent: '50%',
+    sales: '50.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+]
+
+const tiecdaythangs = [
+  {
+    classify: 'Vip',
+    cost: '200.000.000Vnđ',
+    percent: '20%',
+    sales: '150.000.000Vnđ',
+    descr: 'Những đứa con bé bỏng luôn là động lực của những người Cha Mẹ, chúng tối đồng hành cùng bạn'
+  },
+  {
+    classify: 'Vip 2',
+    cost: '199.000.000Vnđ',
+    percent: '30%',
+    sales: '99.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Trung binh',
+    cost: '150.000.000Vnđ',
+    percent: '40%',
+    sales: '69.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Thường',
+    cost: '100.000.000Vnđ',
+    percent: '40%',
+    sales: '50.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+]
+
+const tiecmungthos = [
+  {
+    classify: 'Vip',
+    cost: '200.000.000Vnđ',
+    percent: '20%',
+    sales: '150.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Vip 2',
+    cost: '199.000.000Vnđ',
+    percent: '40%',
+    sales: '99.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Trung binh',
+    cost: '150.000.000Vnđ',
+    percent: '40%',
+    sales: '69.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Thường',
+    cost: '100.000.000Vnđ',
+    percent: '20%',
+    sales: '50.000.000Vnđ',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+]
+
+const tiecngoaitrois = [
+  {
+    classify: 'Vip',
+    cost: '200.000.000Vnđ',
+    sales: '150.000.000Vnđ',
+    percent: '20%',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Vip 2',
+    cost: '199.000.000Vnđ',
+    sales: '99.000.000Vnđ',
+    percent: '20%',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Trung binh',
+    cost: '150.000.000Vnđ',
+    sales: '69.000.000Vnđ',
+    percent: '20%',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+  {
+    classify: 'Thường',
+    cost: '100.000.000Vnđ',
+    sales: '50.000.000Vnđ',
+    percent: '20%',
+    descr: 'Con cháu luôn tưởng nhớ đến ông bà tổ tiên và chúng tôi luôn phục vụ những gì tốt nhất mà chúng tôi có'
+  },
+]
+
+export default { wines, beer, awards, chinhanhs, loaitiecs, userAdmin,tiecngoaitrois,tiecmungthos ,tiecgiatiens, tiecdaythangs,tiecsinhnhats, tieccuois };

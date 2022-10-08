@@ -21,11 +21,11 @@ const Navbar = () => {
         <li className='p__opensans'><a href='#contact'>Liên hệ</a></li>
       </ul>
       <div className='app__navbar-login'>
-        <div className='flex__center' style={{marginRight: '5rem'}}>
-          <Link to="./login" style={{textDecoration: 'none', textAlign:'inline'}} className='p__opensans'>Đăng nhập</Link>
-          <Link to="./register" style={{textDecoration: 'none'}} className='p__opensans'>Đăng kí</Link>
+        <div className='flex__center' style={{marginRight: '5rem',}}>
+          <a href="./login" style={{textDecoration: 'none', width: '50px',textAlign:'center'}} className='p__opensans'>Đăng nhập</a>
+          <a href="./register" style={{textDecoration: 'none', width: '50px'}} className='p__opensans'><span>Đăng kí</span></a>
         </div>
-        <Link to='/booking' style={{textDecoration: 'none'}} className='p__opensans'>Đặt bàn</Link>
+        <a href='/booking' style={{textDecoration: 'none'}} className='p__opensans'>Đặt bàn</a>
       </div>
 
       <div className='app__navbar-smallscreen'>

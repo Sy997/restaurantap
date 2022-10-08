@@ -13,7 +13,9 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-
+import NavbarAdmin from '../NavbarAdmin/NavbarAdmin';
+import ManageList from '../ManageList/ManageList';
+import './bookinginfo.css'
 function createData(name, calories, fat, carbs, protein, price) {
   return {
     name,
@@ -128,7 +130,11 @@ const rows = [
 
 export default function CollapsibleTable() {
   return (
-    <TableContainer component={Paper}>
+    <div className='app__bgad' >
+      <NavbarAdmin />
+      <div className='maincore'>
+      <ManageList />
+    <TableContainer style={{width: '700px', height: '600px', background: 'white', marginLeft: '1rem'}}>
       <Table aria-label="collapsible table">
         <TableHead>
           <TableRow>
@@ -147,5 +153,7 @@ export default function CollapsibleTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    </div>
+    </div>
   );
 }

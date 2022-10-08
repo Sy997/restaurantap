@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
+import ManageList from '../ManageList/ManageList';
+import NavbarAdmin from '../NavbarAdmin/NavbarAdmin';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -36,14 +38,18 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
+      <div className='app__bgad' >
+      <NavbarAdmin />
+      <div className='maincore'>
+        <ManageList />
+        <DataGrid style={{width: '500px', height: '400px', background: 'white', marginLeft: '1rem'}}
+          rows={rows}
+          columns={columns}
+          pageSize={5}
+          rowsPerPageOptions={[5]}
+          checkboxSelection
+        />
+    </div>
     </div>
   );
 }

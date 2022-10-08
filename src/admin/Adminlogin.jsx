@@ -14,7 +14,7 @@ const Adminlogin = () => {
 
     const handleClick = (e) => {
             data.userAdmin.map((user) => {
-                if(username !== user.user && user.matkhau) {
+                if(username !== user.user && pass !== user.matkhau) {
                     let aler = document.getElementById('alert')
                     aler.innerHTML = "Thông tin tài khoản hoặc mật khẩu không đúng"
                 }

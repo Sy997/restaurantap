@@ -1,0 +1,89 @@
+.partone {
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    cursor: pointer;
+    background: green;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    margin-right: 1rem;
+    transition-delay: 1s;
+    transition-property: width height;
+    transition-duration: 1s;
+    position: relative;
+}
+
+.partone:hover {    
+    background: yellow
+}
+
+.tiecs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    padding: 5px auto;
+    background: green;
+    border-radius: 15px 15px 0 0;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.borderbottom {
+    border: 2px solid green;
+    width: 100%;
+}
+
+.descr {
+    display: none;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    bottom: 0rem;
+    position: absolute;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-property: width;
+}
+
+.partone:hover .descr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px
+}
+.Details {
+    background-image: url("../../assets/bg.png");
+    color: white;
+}
+
+.tieccuois, .sinhnhats, .giatiens {
+    margin-top: 2rem;
+}
+
+.price {
+    display: flex;
+    align-items:center; 
+    justify-content: center
+}
+
+span {
+    padding: 15px 10px;
+}
+
+.discount {
+    position: relative;
+    top: -300px;
+    left: -160px; 
+    padding: 2px; 
+    background: red;
+}

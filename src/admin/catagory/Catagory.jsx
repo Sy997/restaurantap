@@ -1,6 +1,5 @@
 import Widget from '../widget/Widget';
 import './catagory.css'
-import Chart from '../Chart/Chart';
 const Catagory = ({ type }) => {
     return (
         <div className="home">
@@ -10,7 +9,6 @@ const Catagory = ({ type }) => {
                 <Widget type="earning"/>
                 <Widget type="balance"/>
             </div>
-            <Chart />
         </div>
     )
 }

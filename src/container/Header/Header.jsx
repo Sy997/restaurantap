@@ -9,7 +9,7 @@ const Header = () => (
       <SubHeading title="Những hương vị mới bạn muốn"/>
       <h1 className='app__header-h1'>Tìm kiếm bữa tối của bạn</h1>
       <p className='p_opensans' style={{ margin: '2rem 0' }}></p>
-      <button type='button' className='custom__button'>tìm thêm</button>
+      <button type='button' className='custom__button'><a href='./details'>Tìm thêm</a></button>
     </div>
 
     <div className='app__wrapper_img'>

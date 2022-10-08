@@ -9,6 +9,7 @@ import Adminlogin from './admin/Adminlogin';
 import Dashboard from './admin/dashboard';
 import Bookinginfo from './admin/booking/Bookinginfo';
 import DataTable from './admin/Account/Account';
+import Details from './components/Details/Details';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path='/details' element={<Details />}/>
 
         <Route path="/adminlogin" element={<Adminlogin />} />
         <Route path='/dashboardadmin' element={<Dashboard />} />
