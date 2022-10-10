@@ -22,7 +22,7 @@ const Navbar = () => {
       </ul>
       <div className='app__navbar-login'>
         <div className='flex__center' style={{marginRight: '5rem',}}>
-          <a href="./login" style={{textDecoration: 'none', width: '50px',textAlign:'center'}} className='p__opensans'>Đăng nhập</a>
+          <a href="./login" style={{textDecoration: 'none', width: '50px',display: 'inline-block'}} className='p__opensans'>Đăng nhập</a>
           <a href="./register" style={{textDecoration: 'none', width: '50px'}} className='p__opensans'><span>Đăng kí</span></a>
         </div>
         <a href='/booking' style={{textDecoration: 'none'}} className='p__opensans'>Đặt bàn</a>

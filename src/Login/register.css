@@ -11,8 +11,8 @@
 }
 
 .formregister {
-    width: 600px;
-    height: 650px;
+    width: 550px;
+    height: 600px;
     background: orange;
     display: flex;
     justify-content: center;
@@ -37,4 +37,11 @@
 
  .inppass, .button {
     margin-top: 1.5rem;
+}
+
+.bandaco_tk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem
 }

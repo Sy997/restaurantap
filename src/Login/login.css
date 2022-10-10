@@ -8,8 +8,8 @@
 }
 
 .formlogin {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 550px;
     background: orange;
     display: flex;
     justify-content: center;
@@ -18,24 +18,38 @@
     border-radius: 6px;
 }
 
-.inpE, .inpP, .check {
+.inpEm, .inpPu {
+    margin-top: 1rem;
+}
+
+.inpEm, .inpPu, .check {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.check, .bandaco_tk {
+.bandacotk {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    margin-left: -8rem
-}
-
-
-.inpE, .inpP, .buttoncheck, .bandaco_tk {
+    padding: 0px 25px;
+    text-align: inline;
     margin-top: 1rem
 }
 
+.checklogin {
+    margin-top: -0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 25px;
+    text-align: inline;
+}
+
+.inpE, .inpP{
+    margin-top: 1rem
+}
 

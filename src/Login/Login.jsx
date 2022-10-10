@@ -29,25 +29,25 @@ const Login = () => {
     <div className='forms app__bg flex__center'>
         <form className='formlogin'>
             <h1>ĐĂNG NHẬP</h1>
-            <div className="inpE">
+            <div className="inpEm">
                 <label htmlFor='email'>Email hoặc số điện thoại</label>
                 <TextField onChange={(e) => setUsername(e.target.value)} style={{width: '400px'}} id="email" type='text' placeholder="Email hoặc số điện thoại" variant="outlined" />
             </div>
-            <div className='inpP'>
+            <div className='inpPu'>
                 <label htmlFor='password'>Email hoặc số điện thoại</label>
                 <TextField onChange={(e) => setPassw(e.target.value)} style={{width: '400px'}} id="password" type={show} placeholder="Mật khẩu" variant="outlined" />
                 <RemoveRedEyeIcon onClick={() => setShow(show === 'text' ? 'password' : 'text')} style={{position: 'relative', left: '361px', bottom: '47px', cursor: 'pointer'}} className='eye' />
             </div>
-            <div className='check'>
-                <FormControlLabel style={{marginRight: '2rem', marginLeft: '7.8rem'}} control={<Checkbox defaultChecked />} label="Label" />
-                <Link style={{marginLeft: '6.5rem'}} to='./forget'>Quên mật khẩu?</Link>
+            <div className='checklogin'>
+                <FormControlLabel control={<Checkbox defaultChecked />} label="Ghi nhớ" />
+                <Link style={{position: 'relative', bottom: '5px'}} to='./forget'>Quên mật khẩu?</Link>
             </div>
             <div className='buttoncheck'>
-                <Button onClick={handleClick} style={{width: '400px'}} variant="contained">Contained</Button>
+                <Button onClick={handleClick} style={{width: '300px', height: '40px'}} variant="contained">Đăng nhập</Button>
             </div>
-            <div className='bandaco_tk'>
-                <p style={{marginRight: '2rem', marginLeft: '7.8rem'}}>Bạn đã có tài khoản?</p>
-                <Link style={{marginLeft: '6.5rem'}} to='/register'>Đăng kí</Link>
+            <div className='bandacotk'>
+                <p style={{padding: '0px 35px'}}>Bạn đã có tài khoản?</p>
+                <Link style={{padding: '0px 35px',position: 'relative', bottom: '10px'}} to='/register'>Đăng kí</Link>
             </div>
         </form>
     </div>

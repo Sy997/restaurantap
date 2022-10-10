@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { Button, TextField } from '@mui/material';
 import data from '../../constants/data';
-const Booking = () => {
+const Booking = (props) => {
 
   const [chinh, setChinh] = useState('')
   const [loait, setLoait] = useState('')

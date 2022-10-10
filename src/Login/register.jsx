@@ -55,8 +55,8 @@ const Register = () => {
                     <Button style={{width: '300px'}} className='dangnh' type='button' onClick={handleClick} variant="contained">Đăng kí</Button>
                 </div>
                 <div className='bandaco_tk'>
-                    <p style={{marginRight: '2rem', marginLeft: '7.8rem'}}>Bạn đã có tài khoản?</p>
-                    <Link style={{marginLeft: '6.5rem'}} href="/login" variant="body2">
+                    <p style={{padding: '0 25px'}}>Bạn đã có tài khoản?</p>
+                    <Link style={{padding: '0 25px', position: 'relative', bottom: '7px', textDecoration: 'none'}} href="/login" variant="body2">
                         Đăng nhập
                     </Link>
                 </div>
