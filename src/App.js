@@ -24,8 +24,8 @@ const App = () => {
         <Route path="/adminlogin" element={<Adminlogin />} />
         <Route path='/dashboardadmin' element={<Dashboard />} />
 
-        <Route path='./account' element={<DataTable />} />
-        <Route path='./datban' element={<Bookinginfo />} />
+        <Route path='dashboardadmin/account' element={<DataTable />} />
+        <Route path='dashboardadmin/datban' element={<Bookinginfo />} />
       
       </Routes>
     </div>
