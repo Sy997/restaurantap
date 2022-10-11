@@ -8,7 +8,7 @@ const ManageList = () => {
     <div className='list'>
         <ul className='manage'>
             <div className='folder'>
-                <FolderSpecialIcon style={{color: 'white', marginBottom: '-1rem', position: 'relative'}} />
+                <FolderSpecialIcon style={{color: 'white', marginBottom: '-10rem', position: 'relative'}} />
                 <h4>Quản lý</h4>
             </div>
             <li>
