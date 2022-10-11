@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/dashboardadmin' element={<Dashboard />} />
 
         <Route path='dashboardadmin/account' element={<DataTable />} />
-        <Route path='dashboardadmin/datban' element={<Bookinginfo />} />
+        <Route path='dashboard/datban' element={<Bookinginfo />} />
       
       </Routes>
     </div>
