@@ -12,10 +12,10 @@ const ManageList = () => {
                 <h4>Quản lý</h4>
             </div>
             <li>
-                <a href='dashboardadmin/account'>Thông tin tài khoản</a>
+                <a href='./account'>Thông tin tài khoản</a>
             </li>
             <li>
-                <a href='dashboardadmin/datban'>Thông tin đặt bàn</a>
+                <a href='./datban'>Thông tin đặt bàn</a>
             </li>
             <li>
                 <a href='./doanhthu'>Thông tin doanh số</a>
