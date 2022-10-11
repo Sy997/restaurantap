@@ -15,10 +15,10 @@ const ManageList = () => {
                 <a href='account'>Thông tin tài khoản</a>
             </li>
             <li>
-                <a href='datban'>Thông tin đặt bàn</a>
+                <a href='dashboardadmin/datban'>Thông tin đặt bàn</a>
             </li>
             <li>
-                <a href='./doanhthu'>Thông tin doanh số</a>
+                <a href='dashboardadmin/doanhthu'>Thông tin doanh số</a>
             </li>
             <div className='folder'>
                 <FolderSpecialIcon style={{color: 'white'}} />
