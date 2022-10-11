@@ -15,7 +15,7 @@ const ManageList = () => {
                 <a href='dashboardadmin/account'>Thông tin tài khoản</a>
             </li>
             <li>
-                <a href='dashboardadmin/datban'>Thông tin đặt bàn</a>
+                <a href='dashboard/datban'>Thông tin đặt bàn</a>
             </li>
             <li>
                 <a href='dashboardadmin/doanhthu'>Thông tin doanh số</a>
