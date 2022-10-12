@@ -366,4 +366,31 @@ const tiecngoaitrois = [
   },
 ]
 
-export default { wines, beer, awards, chinhanhs, loaitiecs, userAdmin,tiecngoaitrois,tiecmungthos ,tiecgiatiens, tiecdaythangs,tiecsinhnhats, tieccuois };
+const payment = [
+  {
+    id: 1,
+    phuongthuc: "Momo",
+    url: `${images.momo}`,
+    payment: './momo'
+  },
+  {
+    id: 2,
+    phuongthuc: "Zalopay",
+    url: `${images.zalopay}`,
+    payment: './zalopay'
+  },
+  {
+    id: 3,
+    phuongthuc: "Banking",
+    url: `${images.banking}`,
+    payment: './banking'
+  },
+  {
+    id: 4,
+    phuongthuc: "Visa",
+    url: `${images.visa}`,
+    payment: './visa'
+  }
+]
+
+export default { wines, beer, awards, chinhanhs, loaitiecs, userAdmin,tiecngoaitrois,tiecmungthos ,tiecgiatiens, tiecdaythangs,tiecsinhnhats, tieccuois, payment };

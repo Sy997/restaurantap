@@ -3,10 +3,15 @@ import './booking.css'
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import { Button, TextField } from '@mui/material';
+import Select from '@mui/material/Select';
 import data from '../../constants/data';
+import Cart from '../Cart/Cart';
+import { Footer } from '../../container';
+import {useNavigate} from 'react-router-dom';
+
 const Booking = (props) => {
+
+  const navigate = useNavigate();
 
   const [chinh, setChinh] = useState('')
   const [loait, setLoait] = useState('')
@@ -17,17 +22,29 @@ const Booking = (props) => {
 
   const handleClick = (e) => {
     e.preventDefault()
-
-    alert('Đặt bàn thành công' + " " + 'Địa chỉ bạn đặt là: ' + chinh + ' hình thức tiệc là: ' + loait + ' Thời gian bạn đã đặt: ' + time + ' Số lượng bạn muốn đặt là: ' + sol + ' Họ Tên của bạn là: ' + hoten + ' Số điện thoại: ' + sdt)
+    if (chinh.length === 0 || loait.length === 0 || time.length === 0 || sol.length === 0 || hoten.length === 0) {
+      alert("Thông Tin Bạn Cấp Chưa Đầy Đủ")
+    }
+    else if (sdt.length < 8) {
+      const sdtif = document.getElementById('sdtif')
+      sdtif.innerHTML = "Số điện thoại không đúng"
+      sdtif.style.color = 'white'
+      sdtif.style.borderColor = 'red'
+    }
+    else {
+      navigate('/info');
+    }
   }
 
+
   return (
-    <div className='booking app__bgr flex__center section__padding'>
-      <h1 className='headtext__cormorant' style={{color: 'black'}}>Hãy giành cho mình một chỗ</h1>
-      <form className='formBooking'>
-        <div className='left'>
-          <div className='diadiem'>
-            <label htmlFor='Box' className='p__opensans' style={{color: 'black'}}>Chọn chi nhánh</label>
+    <div className='bookingg app__bg'>        
+      <form className='forms'>
+        <h1 className='headtext__cormorant'>Đặt Cho Mình Một Bữa Tiệc</h1>
+        <div className='mainbook'>
+          <div className='leftf'>
+            <div className='diadiem'>
+            <label htmlFor='Box' className='p__opensans'>Chọn chi nhánh</label>
             <Box id='Box' sx={{ minWidth: 350 }} className="box" style={{background: 'white', borderRadius: '10px'}}>
               <FormControl fullWidth>
                 <Select
@@ -43,9 +60,9 @@ const Booking = (props) => {
               </FormControl>
             </Box>
           </div>
-          <div className='loaitiec p__opensans' style={{color: 'black'}}>
+          <div className='loaitiec'>
             <label htmlFor='loaitiec'>Loại tiệc</label>
-            <Box id='loaitiec' sx={{ minWidth: 350 }} className="boxtiec" style={{background: 'white', borderRadius: '10px'}}>
+            <Box id='loaitiec' sx={{ minWidth: 350 }} className="boxtiecc" style={{background: 'white', borderRadius: '10px'}}>
               <FormControl fullWidth>                
                 <Select
                   labelId="demo-simple-select-label"
@@ -61,28 +78,39 @@ const Booking = (props) => {
               </FormControl>
             </Box>
           </div>
-          <div class="thoigian form-group pmd-textfield pmd-textfield-floating-label">
-            <label class="control-label p__opensans" for="timepicker" style={{color: 'black'}}>Chọn Thời Gian Bạn Muốn</label>
+          <div class="thoigian">
+            <label class="control-label p__opensans" for="timepicker" >Chọn Thời Gian Bạn Muốn</label>
             <input type="time" class="form-control" onChange={(e) => setTime(e.target.value)} style={{height: '60px', color: 'black', paddingLeft: '10px'}} id="timepicker" />
+            
           </div>
-        </div>
-        <div className='right'>
-          <div className='soluong'>
-            <label className='p__opensans' style={{color: 'black'}} htmlFor='Soluong'>Nhập số lượng người có thể</label>
-            <input id='Soluong' type="number" onChange={(e) => setSol(e.target.value)} style={{color: 'black', paddingLeft: '10px'}} required className='p__opensans'/>
+          </div>
+          <div className='rightf'>
+            <div className='soluong'>
+            <label htmlFor='Soluong'>Nhập số lượng người có thể</label>
+            <input id='Soluong' type="number" onChange={(e) => setSol(e.target.value)} required className='p__opensans'/>
           </div>
           <div className='hoten'>
-            <label className='p__opensans' style={{color: 'black'}} htmlFor='Soluong'>Nhập họ tên của bạn</label>
-            <input id='Soluong' type="text" onChange={(e) => setHot(e.target.value)} style={{color: 'black', paddingLeft: '10px'}} required className='p__opensans'/>
+            <label htmlFor='Soluong'>Nhập họ tên của bạn</label>
+            <input id='Soluong' type="text" onChange={(e) => setHot(e.target.value)} required className='p__opensans'/>
           </div>
           <div className='sodienthoai'>
-            <label className='p__opensans' style={{color: 'black'}} htmlFor='sdt'>Nhập số điện thoại của bạn</label>
-            <input id='sdt' onChange={(e) => setSdt(e.target.value)} style={{color: 'black', paddingLeft: '10px'}} type="number" required className='p__opensans'/>
+            <label  htmlFor='sdt'>Nhập số điện thoại của bạn</label>
+            <input id='sdt' onChange={(e) => setSdt(e.target.value)}  type="number" required className='p__opensans'/>
+            <p id='sdtif'></p>
+          </div>
           </div>
         </div>
+        <Cart brand={chinh} kindpart={loait} time={time} cata={sol} fulname={hoten} phone={sdt}/>
+        <strong onClick={
+          () => setChinh({
+            chinh: ''
+          })
+        } className='dele'>
+          Hủy đặt bàn
+        </strong>
+        <button onClick={handleClick}>Đặt chỗ</button>
       </form>
-
-      <Button className='custom__button' onClick={handleClick} style={{background: 'white', width: '250px', border: 'none'}}>Đặt chỗ</Button>
+      <Footer className="app__bgr" />
     </div>
   )
 }

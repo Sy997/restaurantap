@@ -1,0 +1,39 @@
+.success {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column
+}
+
+.infopay {
+    width: 500;
+    height: 500;
+    background: green;
+    border-radius: 7px;
+}
+
+.headpay {
+    padding-top: 15px
+}
+
+.flex__center {
+    flex-direction: column
+}
+
+.paymethod {
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+    margin-top: 2rem;
+}
+
+.latepay, .boxtiec {
+    margin: 1rem;
+}
+
+.latepay {
+    padding-top: 25px;
+}

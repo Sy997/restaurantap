@@ -10,10 +10,8 @@
 
 .app__bgr {
   background: url('./assets/booking.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-repeat: round;
+  
 }
 
 .app__bgr_admin {

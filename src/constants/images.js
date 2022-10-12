@@ -22,8 +22,17 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import hs from '../assets/hongsy.jpg';
 import signme from '../assets/signme.PNG'
+import momo from '../assets/momo.png'
+import visa from '../assets/visa.png'
+import banking from '../assets/banking.png'
+import zalopay from '../assets/zalopay.png'
+
 
 export default {  
+  zalopay,
+  banking,
+  momo,
+  visa,
   bg,
   chef,
   G,

@@ -16,6 +16,7 @@ const Adminlogin = () => {
             data.userAdmin.map((user) => {
                 if(username !== user.user && pass !== user.matkhau) {
                     let aler = document.getElementById('alert')
+                    aler.style = 'display: block'
                     aler.innerHTML = "Thông tin tài khoản hoặc mật khẩu không đúng"
                 }
                 else {
@@ -35,13 +36,13 @@ const Adminlogin = () => {
             </div>
             <div className='inpPa'>
                 <label className='p__opensans' htmlFor="outlined-basic">Mật khẩu</label>
-                <TextField style={{width: '400px'}} className='pass' id="outlined-basic" type="password" placeholder='Mật khẩu' variant="outlined" onChange={(e) => setPassw(e.target.value)} />
+                <TextField style={{width: '400px'}} className='pass' type="password" placeholder='Mật khẩu' variant="outlined" onChange={(e) => setPassw(e.target.value)} />
             </div>
             <div className='forget'>
                 <FormControlLabel control={<Checkbox defaultChecked />} label="Lưu thông tin" />
                 <Link to='./verify'>Quên mật khẩu?</Link>
             </div>
-            <p id='alert'></p>
+            <p id='alert' style={{display: 'none'}}></p>
             <div className='buttonCl'>
                 <Button onClick={handleClick} style={{width: '400px'}} className='button' variant="contained">Đăng nhập</Button>
             </div>

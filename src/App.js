@@ -10,7 +10,7 @@ import Dashboard from './admin/dashboard';
 import Bookinginfo from './admin/booking/Bookinginfo';
 import DataTable from './admin/Account/Account';
 import Details from './components/Details/Details';
-
+import Info from './components/Inforcart/Infor';
 const App = () => {
   return (
     <div>
@@ -20,12 +20,18 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/booking" element={<Booking />} />
         <Route path='/details' element={<Details />}/>
+        <Route path='/info' element={<Info />} />
 
         <Route path="/adminlogin" element={<Adminlogin />} />
         <Route path='/dashboardadmin' element={<Dashboard />} />
 
+<<<<<<< HEAD
         <Route path='dashboardadmin/account' element={<DataTable />} />
         <Route path='dashboard/datban' element={<Bookinginfo />} />
+=======
+        <Route path='/dashboardadmin/account' element={<DataTable />} />
+        <Route path='/dash/datban' element={<Bookinginfo />} />
+>>>>>>> 3c10f61 (first commit)
       
       </Routes>
     </div>
