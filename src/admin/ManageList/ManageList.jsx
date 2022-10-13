@@ -15,11 +15,7 @@ const ManageList = () => {
                 <a href='dashboardadmin/account'>Thông tin tài khoản</a>
             </li>
             <li>
-<<<<<<< HEAD
                 <a href='dashboard/datban'>Thông tin đặt bàn</a>
-=======
-                <a href='dash/datban'>Thông tin đặt bàn</a>
->>>>>>> 3c10f61 (first commit)
             </li>
             <li>
                 <a href='dashboardadmin/doanhthu'>Thông tin doanh số</a>
