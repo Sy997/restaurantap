@@ -24,15 +24,9 @@ const App = () => {
 
         <Route path="/adminlogin" element={<Adminlogin />} />
         <Route path='/dashboardadmin' element={<Dashboard />} />
-
-<<<<<<< HEAD
         <Route path='dashboardadmin/account' element={<DataTable />} />
         <Route path='dashboard/datban' element={<Bookinginfo />} />
-=======
-        <Route path='/dashboardadmin/account' element={<DataTable />} />
-        <Route path='/dash/datban' element={<Bookinginfo />} />
->>>>>>> 3c10f61 (first commit)
-      
+
       </Routes>
     </div>
 )};
