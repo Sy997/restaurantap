@@ -11,6 +11,7 @@ import Bookinginfo from './admin/booking/Bookinginfo';
 import DataTable from './admin/Account/Account';
 import Details from './components/Details/Details';
 import Info from './components/Inforcart/Infor';
+import Momo from './components/payment/mono/Momo';
 const App = () => {
   return (
     <div>
@@ -22,10 +23,15 @@ const App = () => {
         <Route path='/details' element={<Details />}/>
         <Route path='/info' element={<Info />} />
 
+        {/* admin */}
         <Route path="/adminlogin" element={<Adminlogin />} />
         <Route path='/dashboardadmin' element={<Dashboard />} />
         <Route path='dashboardadmin/account' element={<DataTable />} />
         <Route path='dashboard/datban' element={<Bookinginfo />} />
+
+        {/* payment */}
+
+        <Route path='./momo' element={<Momo />} />
 
       </Routes>
     </div>
