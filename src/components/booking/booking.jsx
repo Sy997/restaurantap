@@ -39,9 +39,9 @@ const Booking = (props) => {
 
   return (
     <div className='bookingg app__bg'>        
-      <form className='forms'>
+      <form className='formss'>
         <h1 className='headtext__cormorant'>Đặt Cho Mình Một Bữa Tiệc</h1>
-        <div className='mainbook'>
+        <div className='mainbookk'>
           <div className='leftf'>
             <div className='diadiem'>
             <label htmlFor='Box' className='p__opensans'>Chọn chi nhánh</label>
@@ -108,7 +108,7 @@ const Booking = (props) => {
         } className='dele'>
           Hủy đặt bàn
         </strong>
-        <button onClick={handleClick}>Đặt chỗ</button>
+        <button className='but' onClick={handleClick}>Đặt chỗ</button>
       </form>
       <Footer className="app__bgr" />
     </div>

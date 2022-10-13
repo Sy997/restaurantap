@@ -10,14 +10,14 @@
     flex-direction: column
 }
 
-.forms {
+.formss {
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column
 }
 
-.mainbook {
+.mainbookk {
     margin: 2rem;
     display: flex;
     flex-direction: row
@@ -62,7 +62,7 @@ label {
     color: white
 }
 
-button {
+.but {
     border-radius: 6px;
     border: none;
     width: 350px;
