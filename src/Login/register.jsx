@@ -4,13 +4,14 @@ import './register.css'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { Link, TextField } from '@mui/material';
 import { Button } from '@mui/material'
-import { Navigate  } from 'react-router-dom'
+import { useNavigate  } from 'react-router-dom'
 const Register = () => {
 
     const [username, setUsername] = useState("")
     const [passw, setPassw] = useState('')
     const [pass2, setPassw2] = useState('')
     const [show, setShow] = useState('password')
+    const Navigate = useNavigate()
 
     const handleClick = (e) => {
         e.preventDefault()
@@ -22,14 +23,21 @@ const Register = () => {
             alert('Thông tin tài khoản hoặc mật khẩu quá ngắn')
         }
 
+        else if (passw.length <= 5) {
+            alert('mat khẩu quá ngắn')
+        }
+
         else {
-            alert('Tài Khoản Là: ' + username + ' ' + 'Mât khẩu: ' + passw + ' ' + "Đăng kí thành công")
-            return <Navigate to="/" />
+            document.getElementById('intu').innerHTML = 'Đăng kí thành công, trình duyệt sẽ tư động chuyển qua đăng nhập trong 5s'
+            document.getElementById('formregister').style.display = 'none'
+            document.getElementById('intu').style.display = 'block';
+            
+            setTimeout(() => Navigate('/Login'), 5000)
         }
     }
   return (
     <div className='forms app__bg'>
-        <form className='formregister'>
+        <form className='formregister' id='formregister'>
             <h1 className=''>ĐĂNG KÍ</h1>
             <div className='inputs'>
                 <div className='inpname'>
@@ -62,6 +70,7 @@ const Register = () => {
                 </div>
             </div>
         </form>
+        <h3 id='intu'></h3>
     </div>
   )
 }

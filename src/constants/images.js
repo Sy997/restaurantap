@@ -26,9 +26,10 @@ import momo from '../assets/momo.png'
 import visa from '../assets/visa.png'
 import banking from '../assets/banking.png'
 import zalopay from '../assets/zalopay.png'
+import qrmomo from '../assets/qrmomo.png'
 
-
-export default {  
+export default { 
+  qrmomo, 
   zalopay,
   banking,
   momo,

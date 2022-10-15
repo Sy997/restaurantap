@@ -7,11 +7,14 @@ import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material'
 import {FormControlLabel, Checkbox} from '@mui/material';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { useNavigate } from 'react-router-dom';
+
 const Login = () => {
 
     const [username, setUsername] = useState("")
     const [passw, setPassw] = useState('')
     const [show, setShow] = useState('password')
+    const Navigate = useNavigate()
 
     const handleClick = (e) => {
         e.preventDefault()
@@ -20,10 +23,10 @@ const Login = () => {
             alert('Tài khoản không được để trống')
         }
         else if(passw.length === 0) {
-            alert('Mật khẩu không được để trông')
+            alert('Mật khẩu không được để trống')
         }
         else
-            alert('Tài khoản và mật khẩu là: ' + username + ' ' + passw)
+            Navigate('/')
     }
   return (
     <div className='forms app__bg flex__center'>

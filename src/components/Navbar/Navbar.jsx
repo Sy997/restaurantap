@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../../constants/images'
-import { Link } from 'react-router-dom'
 import './Navbar.css';
 
 const Navbar = () => {
@@ -22,8 +21,8 @@ const Navbar = () => {
       </ul>
       <div className='app__navbar-login'>
         <div className='logre'>
-        <a className='p__opensans' style={{textDecoration: 'none'}} href='/login'>Login</a>|
-        <a className='p__opensans' style={{textDecoration: 'none'}} href='/register'>Register</a>
+          <a className='p__opensans' style={{textDecoration: 'none'}} href='/login'>Login</a>|
+          <a className='p__opensans' style={{textDecoration: 'none'}} href='/register'>Register</a>
         </div>
         <a href='/booking' style={{textDecoration: 'none'}} className='p__opensans'>Đặt bàn</a>
       </div>
